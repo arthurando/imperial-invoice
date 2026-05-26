@@ -1,0 +1,44 @@
+# --- Private invoice data (NEVER commit) ---
+# Source PDFs and extracted JSON contain real supplier names, prices, and customer info.
+invoice/*
+!invoice/.gitkeep
+prototype/extractions/*
+!prototype/extractions/.gitkeep
+prototype/corrections.jsonl
+prototype/screenshots/
+app/public/invoices/*
+!app/public/invoices/.gitkeep
+
+# --- Secrets ---
+.env
+.env.local
+.env.*.local
+*.secret
+
+# --- Node / Next.js ---
+node_modules/
+.next/
+out/
+dist/
+build/
+*.tsbuildinfo
+next-env.d.ts
+
+# --- Logs / scratch ---
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+_scratch/
+tmp_*
+
+# --- Editor ---
+.vscode/
+.idea/
+*.swp
+
+# --- Claude Code per-user (don't share local permission grants) ---
+.claude/settings.local.json
